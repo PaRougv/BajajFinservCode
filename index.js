@@ -4,10 +4,11 @@ const app = express();
 app.use(express.json());
 
 // Set these via environment variables in Render
-const USER_FULL_NAME = process.env.USER_FULL_NAME || "john_doe";
-const USER_DOB_DDMMYYYY = process.env.USER_DOB_DDMMYYYY || "17091999";
-const EMAIL = process.env.EMAIL || "john@xyz.com";
-const ROLL_NUMBER = process.env.ROLL_NUMBER || "ABCD123";
+const USER_FULL_NAME = process.env.USER_FULL_NAME || "parag_vastrad";  // full name lowercase with underscore
+const USER_DOB_DDMMYYYY = process.env.USER_DOB_DDMMYYYY || "07062004"; // your DOB
+const EMAIL = process.env.EMAIL || "paragprabhu.vastrad2022@vitstudent.ac.in";     // your email
+const ROLL_NUMBER = process.env.ROLL_NUMBER || "22BCE1218";            // your roll number
+
 
 // Core classifier that satisfies the spec
 function processData(arr) {
